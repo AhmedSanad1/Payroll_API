@@ -48,7 +48,7 @@ namespace PayRollApi.Application.Services
             user.LastLoginAt = DateTime.UtcNow;
             await tokenUOW.UsersCRUD.Update(user);
 
-            var accessToken = tokenService.GenerateAccessToken(user);
+            var (accessToken, accessTokenExpiresAtUtc) = tokenService.GenerateAccessToken(user);
             var (rawRefreshToken, refreshTokenEntity) = tokenService.GenerateRefreshToken(user.Id);
             await tokenUOW.RefreshTokenCRUD.Create(refreshTokenEntity);
             await tokenUOW.CompleteAsync();
@@ -61,7 +61,7 @@ namespace PayRollApi.Application.Services
                 Message = localizer.Get("LoginSuccess"),
                 Object = new AuthResult(
                     accessToken,
-                    DateTime.UtcNow.AddMinutes(AccessTokenMinutes),
+                    accessTokenExpiresAtUtc,
                     rawRefreshToken,
                     refreshTokenEntity.ExpiresAt,
                     user.Id,
@@ -96,7 +96,7 @@ namespace PayRollApi.Application.Services
             if (user is null || !user.IsActive)
                 return SessionExpired();
 
-            var newAccessToken = tokenService.GenerateAccessToken(user);
+            var (newAccessToken, newAccessTokenExpiresAtUtc) = tokenService.GenerateAccessToken(user);
             var (newRawRefreshToken, newRefreshTokenEntity) = tokenService.GenerateRefreshToken(user.Id);
 
             // Rotate: the old token dies, the new one takes its place.
@@ -107,7 +107,7 @@ namespace PayRollApi.Application.Services
 
             return new SuccessResponse<AuthResult>(localizer.Get("LoginSuccess"), new AuthResult(
                 newAccessToken,
-                DateTime.UtcNow.AddMinutes(AccessTokenMinutes),
+                newAccessTokenExpiresAtUtc,
                 newRawRefreshToken,
                 newRefreshTokenEntity.ExpiresAt,
                 user.Id,
@@ -140,7 +140,5 @@ namespace PayRollApi.Application.Services
 
             return new SuccessResponse<CurrentUserDto>(localizer.Get("SuccessRetrieving"), new CurrentUserDto(user.Id, user.Username));
         }
-
-        private const int AccessTokenMinutes = 15;
     }
 }

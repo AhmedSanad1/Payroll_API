@@ -13,7 +13,7 @@ namespace PayRollApi.Infrastructure.Services
 {
     public class TokenService(IConfiguration configuration) : ITokenService
     {
-        public string GenerateAccessToken(AdminUser user)
+        public (string Token, DateTime ExpiresAtUtc) GenerateAccessToken(AdminUser user)
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"]!));
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -25,14 +25,15 @@ namespace PayRollApi.Infrastructure.Services
             };
 
             var accessTokenMinutes = configuration.GetValue("Jwt:AccessTokenMinutes", 15);
+            var expiresAtUtc = DateTime.UtcNow.AddMinutes(accessTokenMinutes);
             var tokenDescriptor = new JwtSecurityToken(
                 issuer: configuration["Jwt:Issuer"],
                 audience: configuration["Jwt:Audience"],
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(accessTokenMinutes),
+                expires: expiresAtUtc,
                 signingCredentials: credentials);
 
-            return new JwtSecurityTokenHandler().WriteToken(tokenDescriptor);
+            return (new JwtSecurityTokenHandler().WriteToken(tokenDescriptor), expiresAtUtc);
         }
 
         public (string RawToken, RefreshToken Entity) GenerateRefreshToken(int adminUserId)
