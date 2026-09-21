@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="Application/Application.csproj" />
+    <Project Path="PayRollApi/PayRollApi.csproj" />
+    <Project Path="Domain/Domain.csproj" />
+    <Project Path="Infrastructure/Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="Application.UnitTests/Application.UnitTests.csproj" />
+    <Project Path="Domain.UnitTests/Domain.UnitTests.csproj" />
+    <Project Path="Infrastructure.UnitTests/Infrastructure.UnitTests.csproj" />
+    <Project Path="PayRollApi.UnitTests/PayRollApi.UnitTests.csproj" />
+    <Project Path="PayRollApi.IntegrationTests/PayRollApi.IntegrationTests.csproj" />
+  </Folder>
+</Solution>
