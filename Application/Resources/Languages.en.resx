@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionInvalidPermisssion" xml:space="preserve">
+    <value>"You don't have permission to access this Action"</value>
+  </data>
+  <data name="AddingSuccess" xml:space="preserve">
+    <value>Added new record successfully</value>
+  </data>
+  <data name="DELETESuccess" xml:space="preserve">
+    <value>Deleted record successfully</value>
+  </data>
+  <data name="EmailFormatError" xml:space="preserve">
+    <value>Email format is wrong</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Invalid Credentials</value>
+  </data>
+  <data name="InvalidLanguageValue" xml:space="preserve">
+    <value>Language must be "en" or "ar"</value>
+  </data>
+  <data name="InvalidThemeValue" xml:space="preserve">
+    <value>Theme must be "light" or "dark"</value>
+  </data>
+  <data name="InvalidUserSettings" xml:space="preserve">
+    <value>Invalid settings values</value>
+  </data>
+  <data name="SessionExpired" xml:space="preserve">
+    <value>Session expired, please sign in again</value>
+  </data>
+  <data name="LoginSuccess" xml:space="preserve">
+    <value>Logged in successfully</value>
+  </data>
+  <data name="NotEmptyEmail" xml:space="preserve">
+    <value>Email cannot be empty</value>
+  </data>
+  <data name="NotEmptyEmailOrUserName" xml:space="preserve">
+    <value>Email or Username cannot be empty</value>
+  </data>
+  <data name="SuccessRetrieving" xml:space="preserve">
+    <value>Retrieved data successfully</value>
+  </data>
+  <data name="SuccessUpdating" xml:space="preserve">
+    <value>Updated record successfully</value>
+  </data>
+  <data name="WrongPasswordPattern" xml:space="preserve">
+    <value>password has to be at least 1 English capital letter, 1 lower case letter , special letter and numbers with length of 8 characters at least</value>
+  </data>
+  <data name="Val_BodyMustBeObject" xml:space="preserve">
+    <value>Request body must be a valid JSON object.</value>
+  </data>
+  <data name="Val_NoFieldDefinitions" xml:space="preserve">
+    <value>No field definitions found for '{0}'.</value>
+  </data>
+  <data name="Val_Required" xml:space="preserve">
+    <value>{0} is required.</value>
+  </data>
+  <data name="Val_MustBeString" xml:space="preserve">
+    <value>{0} must be a string.</value>
+  </data>
+  <data name="Val_MaxLength" xml:space="preserve">
+    <value>{0} maximum length is {1}.</value>
+  </data>
+  <data name="Val_MustBeInteger" xml:space="preserve">
+    <value>{0} must be a valid integer.</value>
+  </data>
+  <data name="Val_MustBeNumber" xml:space="preserve">
+    <value>{0} must be a valid number.</value>
+  </data>
+  <data name="Val_MustBeDecimal" xml:space="preserve">
+    <value>{0} must be a valid decimal number.</value>
+  </data>
+  <data name="Val_DecimalPlaces" xml:space="preserve">
+    <value>{0} allows maximum {1} decimal places.</value>
+  </data>
+  <data name="Val_TotalDigits" xml:space="preserve">
+    <value>{0} allows maximum {1} total digits.</value>
+  </data>
+  <data name="Val_MustBeBoolean" xml:space="preserve">
+    <value>{0} must be true or false.</value>
+  </data>
+  <data name="Val_MustBeDate" xml:space="preserve">
+    <value>{0} must be a valid date.</value>
+  </data>
+  <data name="Val_MustBeGuid" xml:space="preserve">
+    <value>{0} must be a valid GUID.</value>
+  </data>
+  <data name="Val_CannotBeNegative" xml:space="preserve">
+    <value>{0} cannot be negative.</value>
+  </data>
+  <data name="Val_MinValue" xml:space="preserve">
+    <value>{0} must be greater than or equal to {1}.</value>
+  </data>
+  <data name="Val_MaxValue" xml:space="preserve">
+    <value>{0} must be less than or equal to {1}.</value>
+  </data>
+  <data name="Val_Failed" xml:space="preserve">
+    <value>Validation failed.</value>
+  </data>
+  <data name="Entity_NotFound" xml:space="preserve">
+    <value>Entity '{0}' was not found.</value>
+  </data>
+  <data name="Record_NotFound" xml:space="preserve">
+    <value>Record not found.</value>
+  </data>
+  <data name="Op_Retrieved" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="Op_Created" xml:space="preserve">
+    <value>Created successfully</value>
+  </data>
+  <data name="Op_Updated" xml:space="preserve">
+    <value>Updated successfully</value>
+  </data>
+  <data name="Op_Deleted" xml:space="preserve">
+    <value>Deleted successfully</value>
+  </data>
+  <data name="Batch_NoOperations" xml:space="preserve">
+    <value>Batch contains no operations.</value>
+  </data>
+  <data name="Batch_LimitExceeded" xml:space="preserve">
+    <value>Batch has {0} operations; the configured limit is {1}.</value>
+  </data>
+  <data name="Batch_OpEntityNotFound" xml:space="preserve">
+    <value>Operation {0}: entity '{1}' was not found.</value>
+  </data>
+  <data name="Batch_OpValidationFailed" xml:space="preserve">
+    <value>Operation {0} failed validation.</value>
+  </data>
+  <data name="Batch_Applied" xml:space="preserve">
+    <value>Batch applied</value>
+  </data>
+  <data name="Error_Unexpected" xml:space="preserve">
+    <value>An error occurred.</value>
+  </data>
+  <data name="Error_FieldValidation" xml:space="preserve">
+    <value>Field validation failed.</value>
+  </data>
+  <data name="HireDateInFuture" xml:space="preserve">
+    <value>Hire date cannot be in the future.</value>
+  </data>
+  <data name="HireDateBeforeBirthDate" xml:space="preserve">
+    <value>Hire date must be after the birth date.</value>
+  </data>
+  <data name="EmployeeUnderageAtHire" xml:space="preserve">
+    <value>Employee must be at least 18 years old at the hire date.</value>
+  </data>
+  <data name="DepartmentNameDuplicate" xml:space="preserve">
+    <value>A department with this name already exists.</value>
+  </data>
+  <data name="DepartmentHasActiveEmployees" xml:space="preserve">
+    <value>This department has active employees and cannot be deleted.</value>
+  </data>
+  <data name="EmployeeEmailDuplicate" xml:space="preserve">
+    <value>An employee with this email already exists.</value>
+  </data>
+  <data name="AttendanceRuleRangeOverlap" xml:space="preserve">
+    <value>This day range overlaps with an existing attendance rule.</value>
+  </data>
+  <data name="ServiceTierDuplicateYears" xml:space="preserve">
+    <value>A service incentive tier for this many years already exists.</value>
+  </data>
+  <data name="InvalidDepartmentId" xml:space="preserve">
+    <value>The specified department does not exist.</value>
+  </data>
+  <data name="InvalidJobGradeId" xml:space="preserve">
+    <value>The specified job grade does not exist.</value>
+  </data>
+  <data name="IdMismatch" xml:space="preserve">
+    <value>The id in the URL does not match the id in the request body.</value>
+  </data>
+  <data name="AbsenceDateInFuture" xml:space="preserve">
+    <value>Absence date cannot be in the future.</value>
+  </data>
+  <data name="AbsenceBeforeHireDate" xml:space="preserve">
+    <value>Absence date cannot be before the employee's hire date.</value>
+  </data>
+  <data name="PayrollRunApproved" xml:space="preserve">
+    <value>This month's payroll run is already approved and cannot be changed.</value>
+  </data>
+  <data name="PayrollRunNotFound" xml:space="preserve">
+    <value>No payroll run exists for this period.</value>
+  </data>
+  <data name="PayrollRunAlreadyApproved" xml:space="preserve">
+    <value>This payroll run is already approved.</value>
+  </data>
+  <data name="PayrollRunFutureMonth" xml:space="preserve">
+    <value>Cannot generate payroll for a future month.</value>
+  </data>
+  <data name="PayrollRunNoActiveEmployees" xml:space="preserve">
+    <value>No active employees are eligible for this period.</value>
+  </data>
+</root>
