@@ -106,6 +106,33 @@ namespace PayRollApi.Application.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language must be &quot;en&quot; or &quot;ar&quot;.
+        /// </summary>
+        internal static string InvalidLanguageValue {
+            get {
+                return ResourceManager.GetString("InvalidLanguageValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Theme must be &quot;light&quot; or &quot;dark&quot;.
+        /// </summary>
+        internal static string InvalidThemeValue {
+            get {
+                return ResourceManager.GetString("InvalidThemeValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid settings values.
+        /// </summary>
+        internal static string InvalidUserSettings {
+            get {
+                return ResourceManager.GetString("InvalidUserSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Logged in successfully.
         /// </summary>
         internal static string LoginSuccess {
@@ -124,6 +151,15 @@ namespace PayRollApi.Application.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Not Empty Email or Username.
+        /// </summary>
+        internal static string NotEmptyEmailOrUserName {
+            get {
+                return ResourceManager.GetString("NotEmptyEmailOrUserName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Retrieving succeeded.
         /// </summary>
         internal static string SuccessRetrieving {
@@ -138,16 +174,6 @@ namespace PayRollApi.Application.Resources {
         internal static string SuccessUpdating {
             get {
                 return ResourceManager.GetString("SuccessUpdating", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Object.
-        /// </summary>
-        internal static object WrongPasswordPattern {
-            get {
-                object obj = ResourceManager.GetObject("WrongPasswordPattern", resourceCulture);
-                return ((object)(obj));
             }
         }
     }
